@@ -1,0 +1,416 @@
+/* Global Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Header Styling */
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #eff0eceb;
+  box-shadow: 0 2px 5px rgba(105, 244, 12, 0.896);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;  /* Stack header rows vertically */
+}
+
+/* Styling for header rows */
+.header-row {
+  display: flex;
+  justify-content: space-between;  /* Align items in a row with space between */
+  align-items: center;  /* Vertically center content */
+  padding: 20px;
+}
+
+/* Logo Styling */
+
+
+
+/* Styling for navigation in header */
+nav {
+  display: flex;
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  color: #0ce734;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+
+}
+
+/* Hover effect for navigation links */
+.nav-links li a:hover {
+  color: #f1f7f1;
+  text-decoration: underline;
+}
+
+/* Second Navigation Row Styling */
+.nav-row {
+  background-color: #ebf2f5;
+  padding: 15px 0;
+  display: flex;
+  margin-right: 20;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .logo h1 {
+      font-size: 24px;
+  }
+
+  .nav-links {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .nav-links li {
+      margin: 5px 0;
+  }
+
+  .nav-links li a {
+      font-size: 16px;
+  }
+}
+
+
+/* Hero Section */
+.hero {
+  height: 50vh; /* Full viewport height */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  background-image: url('hero.jpg'); /* Replace with your image URL */
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents image repetition */
+  /* Optional: Parallax effect */
+  color: white; /* Text color for better contrast */
+  text-align: center; /* Center text */
+  padding: 20px; /* Adds padding for smaller screens */
+  box-sizing: border-box; /* Includes padding in size calculations */
+}
+/* Products Section */
+.products {
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.products h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.product-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.product-cards .card {
+  background-color: #f9f9f9;
+  width: 30%;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.product-cards .card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.product-cards .card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.product-cards .card p {
+  font-size: 16px;
+}
+
+
+/*industries section*/
+.gallery {
+  width: 900px;
+  display: flex;
+  overflow-x: scroll;
+}
+.gallery div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  padding: 10px;
+  flex: none;
+}
+.gallery div img {
+  width: 100%;
+
+}
+.gallery ::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* Solutions Section */
+.solutions {
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.solutions h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.solution-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.solution-cards .card {
+  background-color: #f9f9f9;
+  width: 30%;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.solution-cards .card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.solution-cards .card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.solution-cards .card p {
+  font-size: 16px;
+}
+
+/* Contact Section */
+.contact {
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.contact-info .info {
+  flex: 1;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: left;
+}
+
+.contact-info .info h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-info .info p {
+  font-size: 16px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px;
+  background-color: #51e34a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #45c63a;
+}
+
+/* The navigation menu */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+}
+
+/* The subnavigation menu */
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: red;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: column;
+  left: 0;
+  background-color: #00ff37;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+/* Search Bar Styles */
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+/* Footer Styling */
+footer {
+  width: 100%;
+  background-color: #333333;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+      padding: 10px 30px;
+  }
+
+  header .logo h1 {
+      font-size: 24px;
+  }
+
+  .nav-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+  }
+
+  .nav-links li {
+      margin: 10px 0;
+  }
+
+  .nav-links li a {
+      font-size: 14px;
+  }
+
+  .hero h2 {
+      font-size: 32px;
+  }
+
+  .content {
+      padding: 20px;
+      width: 90%;
+  }
+
+  .product-cards .card,
+  .industry-cards .card {
+      width: 100%;
+  }
+}
